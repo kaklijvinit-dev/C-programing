@@ -1,12 +1,20 @@
 #include<stdio.h>
 int main()
 {
-    int a;
-    printf("Enter a number: ");
-    scanf("%d", &a);
-    // using nested condition operator
-    (a > 0) ? printf("Positive\n"):
-    (a < 0) ? printf("Negative\n"):
-    printf("Zero\n");
+    int a=52;
+    float f;
+    //implicate conversion
+    f=a;
+    printf("Implicit Conversion:\n");
+    printf("Integer a=%d\n",a);
+    printf("convert to float f=%2f\n",f);
+    //explicite conversion
+    float b=1.00;
+    int x;
+    x=(int)b;
+    printf("\nExplicit Conversion\n");
+    printf("original float no: b=%2f\n",b);
+    printf("After type casting to int x=%d\n",x);
     return 0;
+
 }
